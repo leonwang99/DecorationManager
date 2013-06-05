@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/book_grid_bkg">
+	<RelativeLayout  	
+    	android:orientation="horizontal" 
+    	android:layout_width="fill_parent" 
+    	android:layout_height="wrap_content"
+    	android:background="@drawable/bs_title_bkg"
+    	android:id="@+id/title_bar">		
+    	<TextView android:layout_width="wrap_content" 
+        	android:layout_centerInParent="true" 
+        	android:layout_height="wrap_content"
+        	android:textColor="#FF000000" 
+        	android:textSize="24dp"
+        	android:text="装修大师" />			
+	</RelativeLayout>
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:divider="#FF222222"
+        android:dividerHeight="2dp"
+        android:minHeight="36dp"
+        >
+    </ListView>
+			
+</LinearLayout>

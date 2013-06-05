@@ -1,0 +1,34 @@
+
+    <menu xmlns:android="http://schemas.android.com/apk/res/android">
+        <item 
+            android:id="@+id/write"
+            android:title="发送微博"
+            android:alphabeticShortcut="s"
+            
+            />
+        <item
+            android:id="@+id/suggestion"
+            android:title="意见反馈"
+            android:alphabeticShortcut="d"
+            />
+        <item
+            android:id="@+id/change_account"
+            android:title="切换用户"
+            android:alphabeticShortcut="b"
+            />
+        <item 
+            android:id="@+id/account_manager"
+            android:title="切换账号"
+            android:alphabeticShortcut="h"
+            />
+        <item 
+            android:id="@+id/logout"
+            android:title="注销用户"
+            android:alphabeticShortcut="f"
+            />
+        <item 
+            android:id="@+id/exit"
+            android:title="退出"
+            android:alphabeticShortcut="n"
+            />
+    </menu>

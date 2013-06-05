@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<style name="tab_item_text_style">
+        <item name="android:textSize">10.0dip</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:ellipsize">marquee</item>       
+        <item name="android:singleLine">true</item>
+    </style>
+      <style name="grouplist_item_textview">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="Animation">
+
+    	<item name="android:activityOpenEnterAnimation">@anim/translucent_enter</item>  
+        <item name="android:activityOpenExitAnimation">@anim/translucent_exit</item>  
+        <item name="android:activityCloseEnterAnimation">@anim/translucent_enter</item>  
+        <item name="android:activityCloseExitAnimation">@anim/translucent_exit</item>  
+        		
+<!--        <item name="android:taskOpenEnterAnimation">@null</item>-->
+<!--        <item name="android:taskOpenExitAnimation">@null</item>-->
+<!--        <item name="android:taskCloseEnterAnimation">@null</item>-->
+<!--        <item name="android:taskCloseExitAnimation">@null</item>-->
+<!---->
+<!--        <item name="android:taskToFrontEnterAnimation">@null</item>-->
+<!--        <item name="android:taskToFrontExitAnimation">@null</item>-->
+<!--        <item name="android:taskToBackEnterAnimation">@null</item>-->
+<!--        <item name="android:taskToBackExitAnimation">@null</item>-->
+    </style>
+   <style name="AnimationTheme" parent="android:Theme.NoTitleBar">
+        <item name="android:windowAnimationStyle">@style/Animation</item>
+    </style>
+
+</resources>
