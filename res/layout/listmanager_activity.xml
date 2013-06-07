@@ -3,6 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" 
+    android:layout_marginBottom="70dp"	
     android:background="@drawable/book_grid_bkg">
     <RelativeLayout  	
     	android:orientation="horizontal" 
@@ -17,6 +18,126 @@
         	android:textSize="24dp"
         	android:text="清单管理" />			
 	</RelativeLayout>
-								
+
+    <RelativeLayout  	
+    	android:orientation="horizontal" 
+    	android:layout_below="@+id/title_bar"
+    	android:layout_width="fill_parent" 
+    	android:layout_height="wrap_content"
+    	android:layout_centerHorizontal="true"
+    	android:id="@+id/all_budget_number">		
+    	<TextView 
+    	    android:id="@+id/all_budget_text"
+    	    android:layout_width="wrap_content" 
+        	android:layout_alignParentLeft="true" 
+        	android:layout_centerVertical="true"
+        	android:layout_height="wrap_content"
+        	android:textColor="#FF000000" 
+        	android:textSize="24dp"
+        	android:text="总预算：" />	
+        				
+        <TextView 
+            android:id="@+id/all_budget_number"
+    	    android:layout_width="wrap_content" 
+        	android:layout_centerInParent="true" 
+        	android:layout_height="wrap_content"
+        	android:textColor="#FF000000" 
+        	android:textSize="24dp"
+        	android:text="100000" />		
+        	
+       	<ImageView
+        	android:id="@+id/img"
+			android:layout_width="50dp"
+			android:layout_height="50dp"
+			android:layout_margin="5dp"
+			android:layout_alignParentRight="true"
+			android:layout_centerVertical="true"
+			android:src="@drawable/bs_grid_cover_1"
+		/> 	
+	</RelativeLayout>
+	
+  	<LinearLayout  	
+    	android:orientation="horizontal" 
+    	android:layout_below="@+id/all_budget_number"
+    	android:layout_width="fill_parent" 
+    	android:layout_height="wrap_content"
+    	android:id="@+id/used_budget_number">	
+  		<RelativeLayout  	
+    		android:orientation="horizontal" 
+    		android:layout_width="fill_parent" 
+    		android:layout_height="wrap_content"
+    		android:layout_weight="0.5"
+    		android:id="@+id/used_budget_number">	
+    		<TextView 
+    	    	android:id="@+id/used_budget_text"
+    	    	android:layout_width="wrap_content" 
+        		android:layout_alignParentLeft="true" 
+        		android:layout_height="wrap_content"
+        		android:paddingLeft="4dp"
+        		android:layout_centerVertical="true"
+        		android:textColor="#FF000000" 
+        		android:textSize="20dp"
+        		android:text="已使用：" />
+    		<TextView 
+    	    	android:id="@+id/used_budget_text"
+    	    	android:layout_width="wrap_content" 
+        		android:layout_alignParentRight="true" 
+        		android:layout_height="wrap_content"
+        		android:paddingRight="4dp"
+        		android:layout_centerVertical="true"
+        		android:textColor="#FF000000" 
+        		android:textSize="20dp"
+        		android:text="2000" />		
+    	</RelativeLayout>	
+  	
+  		<RelativeLayout  	
+    		android:orientation="horizontal" 
+    		android:layout_width="fill_parent" 
+    		android:layout_height="wrap_content"
+    		android:layout_weight="0.5"
+    		android:id="@+id/other_budget_number">	
+    		<TextView 
+    	    	android:id="@+id/other_budget_text"
+    	    	android:layout_width="wrap_content" 
+        		android:layout_alignParentLeft="true" 
+        		android:layout_height="wrap_content"
+        		android:paddingLeft="4dp"
+        		android:textColor="#FF000000" 
+        		android:layout_centerVertical="true"
+        		android:textSize="20dp"
+        		android:text="可用：" />
+    		<TextView 
+    	    	android:id="@+id/other_budget_text"
+    	    	android:layout_width="wrap_content" 
+        		android:layout_alignParentRight="true" 
+        		android:layout_height="wrap_content"
+        		android:paddingRight="4dp"
+        		android:layout_centerVertical="true"
+        		android:textColor="#FF000000" 
+        		android:textSize="20dp"
+        		android:text="40000" />		
+    	</RelativeLayout>	
+  			
+    </LinearLayout>	               	 
+   	 
+  	
+    <Button
+        android:id="@+id/new_folder_button"
+        android:layout_below="@+id/used_budget_number"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:text="创建新分类" />
+  				
+   	<ListView
+        android:id="@+id/folder_listView"
+        android:layout_below="@+id/new_folder_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:divider="#FF222222"
+        android:dividerHeight="2dp"
+        android:minHeight="36dp"
+        >
+    </ListView>		
 </RelativeLayout>
 		

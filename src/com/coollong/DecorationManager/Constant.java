@@ -10,7 +10,7 @@ public class Constant {
 											R.drawable.tab_icon3,
 											R.drawable.tab_icon4,
 											R.drawable.tab_icon5};
-		
+		     										
 		public static String mTextviewArray[] = {"装修资料", "清单管理", "日记分享", "团购信息", "商家推荐"};
 						
 		

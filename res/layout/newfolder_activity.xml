@@ -146,11 +146,12 @@
         		android:ems="10"
         		android:textColor="#ff000000"
         		android:text="6000" />
-    		</RelativeLayout>	
-    	</RelativeLayout>
-   		
-    
-       	<ListView
+    	</RelativeLayout>	
+    </RelativeLayout>
+    		
+    		
+<!--      
+     <ListView
         	android:id="@+id/folder_listView"
         	android:layout_below="@+id/folder_content"
         	android:layout_width="match_parent"
@@ -159,7 +160,33 @@
         	android:dividerHeight="2dp"
         	android:minHeight="36dp"
         >
-    </ListView>		
+    </ListView>
+-->
+
+    <RelativeLayout
+        android:id="@+id/layout_button"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/ok_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:text="确定" />
+
+        <Button
+            android:id="@+id/cancel_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:text="取消" />
+    </RelativeLayout>
     						
 </RelativeLayout>
 		

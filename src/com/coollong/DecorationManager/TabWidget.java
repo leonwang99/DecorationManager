@@ -77,9 +77,13 @@ public class TabWidget extends TabActivity{
 			//System.out.println(index);
 			imageView.setImageResource(Constant.ConValue.mImageViewArray[index]);
 		}
-		TextView textView = (TextView) view.findViewById(R.id.textview);		
-		textView.setText(Constant.ConValue.mTextviewArray[index]);	
+		TextView textView = (TextView) view.findViewById(R.id.textview);
 		
+		if(textView != null)
+		{
+			textView.setText(Constant.ConValue.mTextviewArray[index]);	
+		}
+				
 		return view;
 		
 	}

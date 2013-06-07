@@ -27,7 +27,11 @@
        
        	<activity android:name=".BookListActivity" android:label="@string/app_name"
  		    	android:screenOrientation="portrait"/>
-       		       						
+
+       	<activity android:name=".NewFolderActivity" android:label="@string/app_name"
+ 		    	android:screenOrientation="portrait"/>
+       	
+       	       			       						
       	<activity android:name=".TabWidget"/>
       	<activity android:name=".PoupWindowDemoActivity"/>
       	<activity android:name=".ListManagerActivity"/>

@@ -22,6 +22,24 @@ public class NewFolderActivity extends Activity{
         requestWindowFeature(Window.FEATURE_NO_TITLE);  
         setContentView(R.layout.newfolder_activity);  
         
+        Button ok_button = (Button)findViewById(R.id.ok_button);             					
+        ok_button.setOnClickListener(new OnClickListener()
+        {
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				NewFolderActivity.this.finish();
+			}
+        });
+        		
+        Button cancel_button = (Button)findViewById(R.id.cancel_button);             					
+        cancel_button.setOnClickListener(new OnClickListener()
+        {	
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				NewFolderActivity.this.finish();		
+			}
+        });
+        
         			
 					
 	}
