@@ -20,11 +20,7 @@ import android.widget.Button;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
 
-public class ListManagerActivity extends Activity{
-	SimpleDateFormat formatter=new SimpleDateFormat("yyyy年MM月dd日    HH:MM"); 
-	Date curDate=new Date(System.currentTimeMillis()); 
-	String time=formatter.format(curDate);
-			
+public class ListManagerActivity extends Activity{			
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
@@ -43,13 +39,13 @@ public class ListManagerActivity extends Activity{
 				Log.d("StillStandingActivity", "Button_start.setOnClickListener!!!!!!!!!!!!!!!!");
 				Intent intent=new Intent();
 
-				intent.setClass(ListManagerActivity.this, NewFolderActivity.class);	             						
-	            startActivity(intent);
+				intent.setClass(ListManagerActivity.this, NewFolderActivity.class);	
+				startActivityForResult(intent,0); 
 			}
         });
                 		
         
-        SimpleAdapter adapter=new SimpleAdapter(this,getData(),R.layout.folder_view_item,new String[]{"img","name","allprice","price"},new int[]{R.id.img,R.id.folder_name,R.id.folder_allprice, R.id.folder_price});//对应R中的id 
+        SimpleAdapter adapter=new SimpleAdapter(this, getData(), R.layout.folder_view_item,new String[]{"img","name","allprice","price"},new int[]{R.id.img,R.id.folder_name,R.id.folder_allprice, R.id.folder_price});//对应R中的id 
         	
         ListView listView=(ListView)findViewById(R.id.folder_listView);
         listView.setAdapter(adapter);		
@@ -67,6 +63,20 @@ public class ListManagerActivity extends Activity{
         });			
 	}
 	
+	
+	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+		switch (resultCode) { 
+			case RESULT_OK:
+				Bundle b = data.getExtras();  
+				String name = b.getString("name");
+				String allPrice = b.getString("allPrice");
+				String price = b.getString("price");
+				
+		        break;	
+			default:	
+				break;
+		}
+	}
 	
 	private List<Map<String,Object>> getData(){
 		List<Map<String,Object>> list=new ArrayList<Map<String,Object>>();
@@ -120,6 +130,6 @@ public class ListManagerActivity extends Activity{
 		list.add(map);
 			
 		return list;
-		}
+	}
 	
 }

@@ -34,6 +34,7 @@
         		android:layout_width="wrap_content"
         		android:layout_height="wrap_content"
         		android:layout_alignParentLeft="true"
+        		android:layout_centerInParent="true"
         		android:text="类名："
         		android:textColor="#ff000000"
         		android:textAppearance="?android:attr/textAppearanceLarge" />
@@ -42,6 +43,7 @@
         		android:layout_width="wrap_content"
         		android:layout_height="wrap_content"
         		android:layout_alignParentRight="true"
+        		android:layout_centerInParent="true"
         		android:ems="10"
         		android:textColor="#ff000000"
         		android:text="橱柜" />
@@ -58,19 +60,21 @@
         		android:layout_width="wrap_content"
         		android:layout_height="wrap_content"
         		android:layout_alignParentLeft="true"
-        		android:text="类型："
+        		android:layout_centerInParent="true"
+        		android:text="预算："
         		android:textColor="#ff000000"
         		android:textAppearance="?android:attr/textAppearanceLarge" />
 
     		<EditText
-        		android:id="@+id/type_editText"
+        		android:id="@+id/allprice_editText"
         		android:layout_width="wrap_content"
         		android:layout_height="wrap_content"
         		android:layout_alignParentRight="true"
+        		android:layout_centerInParent="true"
         		android:ems="10"
         		android:textColor="#ff000000"
-        		android:text="家具类" />
-    		</RelativeLayout>	
+        		android:text="00000" />
+    	</RelativeLayout>	
 
 
     	<RelativeLayout  	
@@ -84,7 +88,8 @@
         		android:layout_width="wrap_content"
         		android:layout_height="wrap_content"
         		android:layout_alignParentLeft="true"
-        		android:text="单价："
+        		android:layout_centerInParent="true"
+        		android:text="余额："
         		android:textColor="#ff000000"
         		android:textAppearance="?android:attr/textAppearanceLarge" />
 
@@ -93,75 +98,14 @@
         		android:layout_width="wrap_content"
         		android:layout_height="wrap_content"
         		android:layout_alignParentRight="true"
+        		android:layout_centerInParent="true"
         		android:ems="10"
         		android:textColor="#ff000000"
-        		android:text="2000" />
-    		</RelativeLayout>	
-    		
-    	<RelativeLayout  	
-    		android:orientation="horizontal" 
-    		android:layout_below="@+id/folder_content_03"
-    		android:layout_width="fill_parent" 
-    		android:layout_height="wrap_content"
-    		android:id="@+id/folder_content_04">
-    		<TextView
-        		android:id="@+id/number_textView"
-        		android:layout_width="wrap_content"
-        		android:layout_height="wrap_content"
-        		android:layout_alignParentLeft="true"
-        		android:text="数量："
-        		android:textColor="#ff000000"
-        		android:textAppearance="?android:attr/textAppearanceLarge" />
-
-    		<EditText
-        		android:id="@+id/number_editText"
-        		android:layout_width="wrap_content"
-        		android:layout_height="wrap_content"
-        		android:layout_alignParentRight="true"
-        		android:ems="10"
-        		android:textColor="#ff000000"
-        		android:text="3" />
-    		</RelativeLayout>	
-    	
-    	<RelativeLayout  	
-    		android:orientation="horizontal" 
-    		android:layout_below="@+id/folder_content_04"
-    		android:layout_width="fill_parent" 
-    		android:layout_height="wrap_content"
-    		android:id="@+id/folder_content_05">
-    		<TextView
-        		android:id="@+id/allprice_textView"
-        		android:layout_width="wrap_content"
-        		android:layout_height="wrap_content"
-        		android:layout_alignParentLeft="true"
-        		android:text="总价："
-        		android:textColor="#ff000000"
-        		android:textAppearance="?android:attr/textAppearanceLarge" />
-
-    		<EditText
-        		android:id="@+id/allprice_editText"
-        		android:layout_width="wrap_content"
-        		android:layout_height="wrap_content"
-        		android:layout_alignParentRight="true"
-        		android:ems="10"
-        		android:textColor="#ff000000"
-        		android:text="6000" />
+        		android:text="00000" />
     	</RelativeLayout>	
-    </RelativeLayout>
-    		
-    		
-<!--      
-     <ListView
-        	android:id="@+id/folder_listView"
-        	android:layout_below="@+id/folder_content"
-        	android:layout_width="match_parent"
-        	android:layout_height="wrap_content" 
-        	android:divider="#FF222222"
-        	android:dividerHeight="2dp"
-        	android:minHeight="36dp"
-        >
-    </ListView>
--->
+    </RelativeLayout>		
+  		    		
+    				
 
     <RelativeLayout
         android:id="@+id/layout_button"
@@ -187,8 +131,7 @@
             android:layout_marginRight="20dp"
             android:text="取消" />
     </RelativeLayout>
-    						
+  			
+    			
+			
 </RelativeLayout>
-		
-
-
