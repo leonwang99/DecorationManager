@@ -72,7 +72,12 @@ public class ListManagerActivity extends Activity{
 				String allPrice = b.getString("allPrice");
 				String price = b.getString("price");
 				
-		        break;	
+				Log.d("ListManagerActivity:", "name = " + name);
+				Log.d("ListManagerActivity:", "allPrice = " + allPrice);
+				Log.d("ListManagerActivity:", "price = " + price);
+				
+				
+		        break;		
 			default:	
 				break;
 		}
